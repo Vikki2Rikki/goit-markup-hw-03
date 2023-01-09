@@ -14,12 +14,32 @@
 .link{
     text-decoration: none;
 }
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    ul,ol{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    img{
+        display: block;
+    }
 body{
     font-family: 'Roboto',sans-serif ;
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
 }
 /* ===========components=========== */
+.container{
+width: 1158px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+    
+}
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -32,7 +52,6 @@ body{
     color: var(--brand-color);
     }
     .btn{
-        font-family: inherit ;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -59,7 +78,27 @@ body{
     letter-spacing: 0.02em;
 }
 /* ==============Header========== */
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.page-nav{
+    display: flex;
+    align-items: center;
+} 
+.contact-list{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
 .header-logo{
+    margin-right: 76px;
 color: var(--primary-title-color);
 }
 .menu-link{
@@ -68,10 +107,14 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--primary-title-color);
+
 }
 .menu-link:hover,
 .menu-link:focus{
     color: var(--accent-color);
+}
+.menu-item:not(:last-child){
+margin-right: 40px;   
 }
 .contact-list .link{
 
@@ -85,7 +128,9 @@ color: var(--primary-text-color) ;
 .contact-list .link:focus{
     color: var(--accent-color);
 }
-
+.contact-tel{
+    margin-left: 40px;
+}
 /* =================Hero=============== */
 .hero{
     background-color: var(--primary-title-color);
