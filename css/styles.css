@@ -93,8 +93,6 @@ padding-right: 15px;
 .header-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 24px;
     
 }
 .page-nav{
@@ -104,6 +102,7 @@ padding-right: 15px;
 .contact-list{
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 .menu{
     display: flex;
@@ -112,6 +111,7 @@ padding-right: 15px;
 .header-logo{
     margin-right: 76px;
     padding-top: 26px;
+    padding-bottom: 24px;
 color: var(--primary-title-color);
 }
 .menu-item{
@@ -121,6 +121,7 @@ color: var(--primary-title-color);
 .menu-link{
     display: block;
     padding-top: 26px;
+    padding-bottom: 24px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -136,13 +137,13 @@ color: var(--primary-title-color);
 margin-right: 40px;   
 }
 .contact-list .link{
-    display: block;
-    padding-top: 26px;
+display: block;
+padding-top: 26px ;
+padding-bottom: 24px;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: var(--primary-text-color) ;
-
+color: var(--primary-text-color);
 }
 .contact-list .link:hover,
 .contact-list .link:focus{
@@ -173,6 +174,7 @@ color: var(--primary-text-color) ;
     padding-bottom: 16px;
     padding-left: 32px;
     padding-right: 32px;
+    border: none;
     color: var(--primary-background-color);
     background-color: var(--brand-color);
 }
@@ -199,7 +201,7 @@ overflow: hidden;
     gap: var(--main-gap);
 }
 .features-list > .item{
-    flex-basis:calc((100% - 72px) / 4) ;
+    flex-basis:calc((100% - 3 * 24px) / 4) ;
 }
 .features-subtitle{
     margin-bottom: 8px;
@@ -208,8 +210,11 @@ overflow: hidden;
 
 
 /* ===============What are we doing========== */
+.section-work{
+    padding-top: 0;
+}
 .work-title{
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     text-align: center;
     color: var(--primary-title-color); 
 }
@@ -218,7 +223,7 @@ overflow: hidden;
     gap: var(--main-gap);
 }
 .work-item{
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 /* =============Our team=============== */
@@ -237,7 +242,7 @@ overflow: hidden;
     gap: var(--main-gap);
 }
 .team-member{
-    flex-basis:calc((100% - 72px) / 4) ;
+    flex-basis:calc((100% - 3 * 24px) / 4) ;
     background-color: var(--primary-background-color);
 }
 .team-description{
@@ -263,6 +268,7 @@ border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-title-color);
 }
 .footer-logo{
+    display: block;
     margin-bottom: 16px;
 color: var(--light-text-color);
 }
@@ -304,12 +310,13 @@ row-gap: 48px;
 column-gap: var(--main-gap);
 }
 .example-item{
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .example-description{
 padding-top: 32px;
 padding-bottom: 32px;
+padding-left: 16px;
 border: 1px solid var(--secondary-text-color);
 border-top: none;
 }
